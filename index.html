@@ -138,6 +138,42 @@
         </ul>
       </div>
     </section>
+    <!-- Project: PulseStream Big Data NLP -->
+    <section class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm space-y-6">
+      <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-4">
+        <div>
+          <span class="text-xs font-semibold uppercase tracking-wider text-sky-600">Distributed Big Data & Streaming NLP</span>
+          <h2 class="text-2xl font-bold mt-1">PulseStream: Real-Time Social Sentiment & Analytics Engine</h2>
+        </div>
+        <div class="flex gap-2">
+          <span class="text-xs font-semibold px-3 py-1 bg-sky-50 text-sky-700 rounded-full border border-sky-200">Apache Spark & Live API</span>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6 text-sm">
+        <div>
+          <h3 class="font-bold text-slate-900">Problem & User Need</h3>
+          <p class="text-slate-600 mt-1 leading-relaxed">
+            Brands and analysts need real-time awareness of customer sentiment during live events and product launches, but high-velocity unstructured social streams cause severe reporting latency and memory bottlenecks.
+          </p>
+        </div>
+        <div>
+          <h3 class="font-bold text-slate-900">Distributed Solution</h3>
+          <p class="text-slate-600 mt-1 leading-relaxed">
+            Engineered an end-to-end distributed text analytics pipeline pairing the Twitter/X API with an 8-core Apache Spark cluster to clean, vectorize, and classify live tweet streams at scale.
+          </p>
+        </div>
+      </div>
+
+      <div class="space-y-3 text-sm bg-slate-50 p-5 rounded-xl border border-slate-100">
+        <h3 class="font-bold text-slate-900">Architecture & Technical PM Decisions</h3>
+        <ul class="list-disc list-inside space-y-2 text-slate-600">
+          <li><strong>Multi-Model Benchmarking:</strong> Trained and benchmarked three distinct classifiers—Logistic Regression, LinearSVC (SVM), and Multinomial Naive Bayes—evaluating accuracy, precision, and latency on a 320,000-sample test split.</li>
+          <li><strong>Zero-Shuffle Broadcast Serialization:</strong> Broadcasted serialized TF-IDF vectorizers and pre-trained classification models across Spark worker nodes, eliminating cross-partition network shuffling and preventing JVM driver memory spikes.</li>
+          <li><strong>Real-Time Aggregation & Telemetry:</strong> Implemented PySpark window partitions and UDFs to output live sentiment polarity distributions and trending n-gram frequency rankings for executive dashboards.</li>
+        </ul>
+      </div>
+    </section>
     <!-- Leadership & Credentials -->
     <section class="space-y-4">
       <h2 class="text-xl font-bold tracking-tight">Leadership & Technical Credentials</h2>
