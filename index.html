@@ -212,6 +212,42 @@
         </ul>
       </div>
     </section>
+    <!-- Project 6: Stock Exchange Full-Stack Platform -->
+    <section class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm space-y-6">
+      <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-4">
+        <div>
+          <span class="text-xs font-semibold uppercase tracking-wider text-indigo-600">Full-Stack Real-Time Systems</span>
+          <h2 class="text-2xl font-bold mt-1">Equinox: Real-Time Stock Exchange & Analytics Platform</h2>
+        </div>
+        <div class="flex gap-2">
+          <span class="text-xs font-semibold px-3 py-1 bg-indigo-50 text-indigo-700 rounded-full border border-indigo-200">FastAPI, WebSockets & Redis</span>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6 text-sm">
+        <div>
+          <h3 class="font-bold text-slate-900">User Need & System Friction</h3>
+          <p class="text-slate-600 mt-1 leading-relaxed">
+            Traders and retail investors require sub-second price updates and technical indicators without page reloads, demanding an event-driven architecture capable of handling high-frequency websocket broadcasting.
+          </p>
+        </div>
+        <div>
+          <h3 class="font-bold text-slate-900">Full-Stack Solution</h3>
+          <p class="text-slate-600 mt-1 leading-relaxed">
+            Built an end-to-end trading and analytics platform featuring a FastAPI asynchronous backend, Redis pub/sub broker for real-time WebSocket ticker feeds, PostgreSQL/SQLite persistence, and automated moving average & RSI analytics.
+          </p>
+        </div>
+      </div>
+
+      <div class="space-y-3 text-sm bg-slate-50 p-5 rounded-xl border border-slate-100">
+        <h3 class="font-bold text-slate-900">Engineering & Technical PM Decisions</h3>
+        <ul class="list-disc list-inside space-y-2 text-slate-600">
+          <li><strong>Event-Driven Pub/Sub Architecture:</strong> Leveraged Redis channels to decouple stock price generators from client WebSocket connections, ensuring low-latency data streaming to multiple concurrent dashboard viewers.</li>
+          <li><strong>Relational & Time-Series Modeling:</strong> Designed PostgreSQL database schemas (`init.sql`, SQLAlchemy ORM) optimized for storing historical tick data and technical indicator snapshots.</li>
+          <li><strong>Resilient Fallback & Containerization:</strong> Implemented automatic mock-data fallbacks during third-party API rate limits and packaged the full stack with Docker/Podman compose for instant containerized deployment.</li>
+        </ul>
+      </div>
+    </section>
     <!-- Leadership & Credentials -->
     <section class="space-y-4">
       <h2 class="text-xl font-bold tracking-tight">Leadership & Technical Credentials</h2>
