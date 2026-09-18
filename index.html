@@ -176,6 +176,42 @@
       </div>
     </section>
 
+    <!-- Project 5: BondAgent FinTech AI -->
+    <section class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm space-y-6">
+      <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-4">
+        <div>
+          <span class="text-xs font-semibold uppercase tracking-wider text-emerald-600">Agentic AI & Quantitative FinTech</span>
+          <h2 class="text-2xl font-bold mt-1">BondAgent: Multi-Agent Fixed-Income Copilot & Yield Engine</h2>
+        </div>
+        <div class="flex gap-2">
+          <span class="text-xs font-semibold px-3 py-1 bg-emerald-50 text-emerald-700 rounded-full border border-emerald-200">AWS Bedrock & Serverless</span>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6 text-sm">
+        <div>
+          <h3 class="font-bold text-slate-900">User Friction & Market Problem</h3>
+          <p class="text-slate-600 mt-1 leading-relaxed">
+            Institutional investors and fixed-income analysts face high cognitive load switching between disjointed market terminals to evaluate Treasury yield fluctuations, interest rate duration risk, and macroeconomic Fed policy shifts.
+          </p>
+        </div>
+        <div>
+          <h3 class="font-bold text-slate-900">Multi-Agent Solution</h3>
+          <p class="text-slate-600 mt-1 leading-relaxed">
+            Shipped an agentic conversational copilot on AWS Bedrock paired with an authenticated web interface, orchestrating specialized microservices for live bond pricing, duration/convexity modeling, and predictive yield scenarios.
+          </p>
+        </div>
+      </div>
+
+      <div class="space-y-3 text-sm bg-slate-50 p-5 rounded-xl border border-slate-100">
+        <h3 class="font-bold text-slate-900">System Architecture & Technical PM Decisions</h3>
+        <ul class="list-disc list-inside space-y-2 text-slate-600">
+          <li><strong>Deterministic Tool Execution:</strong> Decoupled the Bedrock Agent into three dedicated Lambda action groups—Bond Data Generator (Alpha Vantage live ingestion), Technical Analyzer (calculating duration, convexity, and credit spreads), and Market Predictor (generating 30-day macro scenarios)—preventing LLM calculation errors.</li>
+          <li><strong>Privacy-Preserving Authentication:</strong> Integrated Amazon Cognito with client-side SHA-256 session hashing, guaranteeing strict JWT verification and persistent DynamoDB conversation threads without storing raw user credentials in session state.</li>
+          <li><strong>Resilient Ingestion & S3 Caching:</strong> Engineered a robust parameter extractor handling arbitrary Bedrock POST payload schemas, backed by S3 caching to eliminate third-party API rate limiting during high-volume queries.</li>
+        </ul>
+      </div>
+    </section>
     <!-- Leadership & Credentials -->
     <section class="space-y-4">
       <h2 class="text-xl font-bold tracking-tight">Leadership & Technical Credentials</h2>
