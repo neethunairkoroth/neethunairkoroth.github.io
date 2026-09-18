@@ -102,6 +102,42 @@
       </div>
     </section>
 
+    <!-- Project 3: Marketplace Pulse -->
+    <section class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm space-y-6">
+      <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-4">
+        <div>
+          <span class="text-xs font-semibold uppercase tracking-wider text-teal-600">Decision Intelligence Platform</span>
+          <h2 class="text-2xl font-bold mt-1">Marketplace Pulse: Dynamic Pricing & Seller Intelligence Engine</h2>
+        </div>
+        <div class="flex gap-2">
+          <span class="text-xs font-semibold px-3 py-1 bg-teal-50 text-teal-700 rounded-full border border-teal-200">Interactive ML Tool</span>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6 text-sm">
+        <div>
+          <h3 class="font-bold text-slate-900">Problem & Market Opportunity</h3>
+          <p class="text-slate-600 mt-1 leading-relaxed">
+            Independent marketplace merchants face inventory stagnation and margin compression due to opaque competitor pricing and unpredictable transit costs across multi-regional hubs.
+          </p>
+        </div>
+        <div>
+          <h3 class="font-bold text-slate-900">Product Solution</h3>
+          <p class="text-slate-600 mt-1 leading-relaxed">
+            Engineered an end-to-end analytics and pricing copilot processing 760,000+ listings to recommend competitive price bands, rank seller reliability, and optimize cross-country fulfillment paths.
+          </p>
+        </div>
+      </div>
+
+      <div class="space-y-3 text-sm bg-slate-50 p-5 rounded-xl border border-slate-100">
+        <h3 class="font-bold text-slate-900">PM Decisions & Architecture</h3>
+        <ul class="list-disc list-inside space-y-2 text-slate-600">
+          <li><strong>Model Benchmark & Margin Trade-offs:</strong> Evaluated 4 regression architectures (Ridge, Random Forest, Decision Tree, KNN); selected Random Forest for primary pricing guidance (RMSE: 54.22 vs Ridge: 171.73) to minimize underpricing risk.</li>
+          <li><strong>Reputation Scoring:</strong> Formulated a max-heap prioritization algorithm weighting seller ratings and review volume to balance trust metrics with platform liquidity.</li>
+          <li><strong>Fulfillment Path Optimization:</strong> Integrated graph-based shortest-path routing (Dijkstra) between regional transit nodes to model delivery cost impact on net margins.</li>
+        </ul>
+      </div>
+    </section>
     <!-- Leadership & Credentials -->
     <section class="space-y-4">
       <h2 class="text-xl font-bold tracking-tight">Leadership & Technical Credentials</h2>
