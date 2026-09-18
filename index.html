@@ -9,7 +9,7 @@
 <body class="bg-slate-50 text-slate-900 font-sans antialiased">
 
   <!-- Header -->
-  <header class="max-w-4xl mx-auto px-6 pt-16 pb-12">
+  <header class="max-w-5xl mx-auto px-6 pt-16 pb-12">
     <div class="flex flex-col md:flex-row md:items-center justify-between gap-6">
       <div>
         <h1 class="text-4xl font-extrabold tracking-tight">Neethu Thalappan Koroth</h1>
@@ -27,13 +27,50 @@
   </header>
 
   <!-- Main Content -->
-  <main class="max-w-4xl mx-auto px-6 pb-20 space-y-12">
+  <main class="max-w-5xl mx-auto px-6 pb-20 space-y-12">
 
-    <!-- Project 1: GloveSense -->
+    <!-- Project 1: Course Search Advanced (Information Retrieval Capstone) -->
     <section class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm space-y-6">
       <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-4">
         <div>
-          <span class="text-xs font-semibold uppercase tracking-wider text-blue-600">Featured 0-to-1 Product</span>
+          <span class="text-xs font-semibold uppercase tracking-wider text-blue-600">Information Retrieval Capstone Project</span>
+          <h2 class="text-2xl font-bold mt-1">Course Search Advanced: Hybrid Intent-Aware Discovery Engine</h2>
+        </div>
+        <div class="flex gap-2">
+          <span class="text-xs font-semibold px-3 py-1 bg-blue-50 text-blue-700 rounded-full border border-blue-200">TF-IDF, LSA & Skill Boosting</span>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6 text-sm">
+        <div>
+          <h3 class="font-bold text-slate-900">Problem & Lexical Friction</h3>
+          <p class="text-slate-600 mt-1 leading-relaxed">
+            Online learners spend an average of 2.5 hours searching for courses due to the lexical gap (e.g., searching "AI" misses "Machine Learning") and mismatched difficulty levels, leading to high frustration and drop-out rates.
+          </p>
+        </div>
+        <div>
+          <h3 class="font-bold text-slate-900">Hybrid IR Solution</h3>
+          <p class="text-slate-600 mt-1 leading-relaxed">
+            Architected a multi-layer search engine across 4,551 curated courses from Coursera and Udemy, combining baseline TF-IDF cosine similarity, Latent Semantic Analysis (LSA via TruncatedSVD), and skill-level re-ranking.
+          </p>
+        </div>
+      </div>
+
+      <div class="space-y-3 text-sm bg-slate-50 p-5 rounded-xl border border-slate-100">
+        <h3 class="font-bold text-slate-900">Technical PM Decisions & Validated Metrics</h3>
+        <ul class="list-disc list-inside space-y-2 text-slate-600">
+          <li><strong>Zipf's Law Corpus Validation:</strong> Statistically profiled course vocabulary to confirm power-law distribution, justifying IDF weighting to effectively down-weight stop words and elevate domain-specific discriminative terms.</li>
+          <li><strong>Semantic SVD Projection:</strong> Reduced high-dimensional sparse term-document matrices into 100 latent semantic dimensions using TruncatedSVD, bridging synonymy gaps between related technical domains.</li>
+          <li><strong>Validated Skill-Match Accuracy:</strong> Improved skill-match accuracy from 60% (baseline lexical search) to <strong>100%</strong> on held-out test queries (e.g., "beginner python") via heuristic difficulty boosting.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Project 2: GloveSense -->
+    <section class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm space-y-6">
+      <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-4">
+        <div>
+          <span class="text-xs font-semibold uppercase tracking-wider text-emerald-600">Featured 0-to-1 Product</span>
           <h2 class="text-2xl font-bold mt-1">GloveSense: AI Neuro-Rehabilitation Platform</h2>
         </div>
         <div class="flex gap-2">
@@ -66,7 +103,7 @@
       </div>
     </section>
 
-    <!-- Project 2: Enterprise AI -->
+    <!-- Project 3: Enterprise AI -->
     <section class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm space-y-6">
       <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-4">
         <div>
@@ -102,7 +139,7 @@
       </div>
     </section>
 
-    <!-- Project 3: Marketplace Pulse -->
+    <!-- Project 4: Marketplace Pulse -->
     <section class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm space-y-6">
       <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-4">
         <div>
@@ -139,7 +176,7 @@
       </div>
     </section>
 
-    <!-- Project 4: PulseStream Big Data NLP -->
+    <!-- Project 5: PulseStream Big Data NLP -->
     <section class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm space-y-6">
       <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-4">
         <div>
@@ -176,43 +213,44 @@
       </div>
     </section>
 
-    <!-- Project 5: BondAgent FinTech AI -->
+    <!-- Project 6: BondAgent FinTech AI -->
     <section class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm space-y-6">
       <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-4">
         <div>
-          <span class="text-xs font-semibold uppercase tracking-wider text-emerald-600">Agentic AI & Quantitative FinTech</span>
+          <span class="text-xs font-semibold uppercase tracking-wider text-amber-600">Agentic AI & Quantitative FinTech</span>
           <h2 class="text-2xl font-bold mt-1">BondAgent: Multi-Agent Fixed-Income Copilot & Yield Engine</h2>
         </div>
         <div class="flex gap-2">
-          <span class="text-xs font-semibold px-3 py-1 bg-emerald-50 text-emerald-700 rounded-full border border-emerald-200">AWS Bedrock & Serverless</span>
+          <span class="text-xs font-semibold px-3 py-1 bg-amber-50 text-amber-700 rounded-full border border-amber-200">AWS Bedrock & Serverless</span>
         </div>
       </div>
 
       <div class="grid md:grid-cols-2 gap-6 text-sm">
         <div>
-          <h3 class="font-bold text-slate-900">User Friction & Market Problem</h3>
+          <h3 class="font-bold text-slate-900">User Need & Domain Friction</h3>
           <p class="text-slate-600 mt-1 leading-relaxed">
-            Institutional investors and fixed-income analysts face high cognitive load switching between disjointed market terminals to evaluate Treasury yield fluctuations, interest rate duration risk, and macroeconomic Fed policy shifts.
+            Fixed-income investors and analysts struggle to synthesize real-time Treasury yield curves, macroeconomic policy shifts, and bond duration risk across disjointed market terminals, leading to delayed portfolio rebalancing.
           </p>
         </div>
         <div>
-          <h3 class="font-bold text-slate-900">Multi-Agent Solution</h3>
+          <h3 class="font-bold text-slate-900">Agentic Architecture</h3>
           <p class="text-slate-600 mt-1 leading-relaxed">
-            Shipped an agentic conversational copilot on AWS Bedrock paired with an authenticated web interface, orchestrating specialized microservices for live bond pricing, duration/convexity modeling, and predictive yield scenarios.
+            Engineered a production-ready conversational copilot using AWS Bedrock Agents and Lambda tool-calling to orchestrate live bond pricing, yield spread benchmarking, and interest rate scenario forecasting.
           </p>
         </div>
       </div>
 
       <div class="space-y-3 text-sm bg-slate-50 p-5 rounded-xl border border-slate-100">
-        <h3 class="font-bold text-slate-900">System Architecture & Technical PM Decisions</h3>
+        <h3 class="font-bold text-slate-900">Core Technical PM Decisions</h3>
         <ul class="list-disc list-inside space-y-2 text-slate-600">
-          <li><strong>Deterministic Tool Execution:</strong> Decoupled the Bedrock Agent into three dedicated Lambda action groups—Bond Data Generator (Alpha Vantage live ingestion), Technical Analyzer (calculating duration, convexity, and credit spreads), and Market Predictor (generating 30-day macro scenarios)—preventing LLM calculation errors.</li>
-          <li><strong>Privacy-Preserving Authentication:</strong> Integrated Amazon Cognito with client-side SHA-256 session hashing, guaranteeing strict JWT verification and persistent DynamoDB conversation threads without storing raw user credentials in session state.</li>
-          <li><strong>Resilient Ingestion & S3 Caching:</strong> Engineered a robust parameter extractor handling arbitrary Bedrock POST payload schemas, backed by S3 caching to eliminate third-party API rate limiting during high-volume queries.</li>
+          <li><strong>Deterministic Tool Execution:</strong> Decoupled the Bedrock Agent into three dedicated Lambda action groups (Yield Extraction, Duration/Spread Analysis, and Macro Prediction), offloading complex financial calculations to deterministic code to prevent LLM mathematical hallucinations.</li>
+          <li><strong>Privacy-Preserving Authentication:</strong> Integrated Amazon Cognito with client-side SHA-256 session hashing, guaranteeing secure JWT validation and persistent DynamoDB conversation threads without storing raw user identity in session metadata.</li>
+          <li><strong>Resilient Ingestion Pipeline:</strong> Configured S3 telemetry caching for Alpha Vantage financial feeds with automated schema normalizers, eliminating third-party API rate-limit bottlenecks during peak market hours.</li>
         </ul>
       </div>
     </section>
-    <!-- Project 6: Stock Exchange Full-Stack Platform -->
+
+    <!-- Project 7: Stock Exchange Full-Stack Platform -->
     <section class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm space-y-6">
       <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-4">
         <div>
@@ -243,11 +281,12 @@
         <h3 class="font-bold text-slate-900">Engineering & Technical PM Decisions</h3>
         <ul class="list-disc list-inside space-y-2 text-slate-600">
           <li><strong>Event-Driven Pub/Sub Architecture:</strong> Leveraged Redis channels to decouple stock price generators from client WebSocket connections, ensuring low-latency data streaming to multiple concurrent dashboard viewers.</li>
-          <li><strong>Relational & Time-Series Modeling:</strong> Designed PostgreSQL database schemas (`init.sql`, SQLAlchemy ORM) optimized for storing historical tick data and technical indicator snapshots.</li>
+          <li><strong>Relational & Time-Series Modeling:</strong> Designed PostgreSQL database schemas (SQLAlchemy ORM) optimized for storing historical tick data and technical indicator snapshots.</li>
           <li><strong>Resilient Fallback & Containerization:</strong> Implemented automatic mock-data fallbacks during third-party API rate limits and packaged the full stack with Docker/Podman compose for instant containerized deployment.</li>
         </ul>
       </div>
     </section>
+
     <!-- Leadership & Credentials -->
     <section class="space-y-4">
       <h2 class="text-xl font-bold tracking-tight">Leadership & Technical Credentials</h2>
