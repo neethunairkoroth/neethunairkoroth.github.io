@@ -1,531 +1,585 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Neethu Thalappan Koroth | Product Portfolio</title>
-  <script src="[https://cdn.tailwindcss.com](https://cdn.tailwindcss.com)"></script>
-  <script>
-    tailwind.config = {
-      darkMode: 'class',
-      theme: {
-        extend: {
-          colors: {
-            google: { blue: '#4285F4', red: '#EA4335', yellow: '#FBBC05', green: '#34A853' }
-          }
-        }
-      }
-    }
-  </script>
-  <style>
-    @import url('[https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap](https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap)');
-    body { font-family: 'Plus Jakarta Sans', sans-serif; }
-    .glass-card {
-      background: rgba(18, 24, 38, 0.75);
-      backdrop-filter: blur(16px);
-      border: 1px solid rgba(255, 255, 255, 0.08);
-    }
-    .hero-glow {
-      background: radial-gradient(circle at 50% 15%, rgba(66, 133, 244, 0.18) 0%, rgba(52, 168, 83, 0.1) 35%, transparent 70%);
-    }
-    .card-glow:hover {
-      box-shadow: 0 0 35px rgba(66, 133, 244, 0.25);
-      border-color: rgba(66, 133, 244, 0.5);
-    }
-  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-slate-950 text-slate-100 min-h-screen hero-glow selection:bg-blue-500 selection:text-white">
+<body class="bg-slate-50 text-slate-900 font-sans antialiased">
 
-  <!-- Navigation Bar -->
-  <nav class="sticky top-0 z-50 backdrop-blur-xl bg-slate-950/85 border-b border-slate-800/80">
-    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-      <a href="#" class="flex items-center gap-3 group">
-        <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-blue-500 via-green-500 to-yellow-400 p-0.5 shadow-lg group-hover:scale-105 transition">
-          <div class="w-full h-full bg-slate-950 rounded-[10px] flex items-center justify-center font-extrabold text-sm text-white">N</div>
-        </div>
-        <div>
-          <span class="font-bold tracking-tight text-white block">Neethu Thalappan Koroth</span>
-          <span class="text-[10px] text-blue-400 font-semibold tracking-wider uppercase">APM & AI Systems Lead</span>
-        </div>
-      </a>
-      <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
-        <a href="#philosophy" class="hover:text-blue-400 transition">PM Manifesto</a>
-        <a href="#projects" class="hover:text-blue-400 transition">Flagship Products (13)</a>
-        <a href="#experience" class="hover:text-blue-400 transition">Experience</a>
-        <a href="#achievements" class="hover:text-blue-400 transition">Honors & Awards</a>
-      </div>
-      <div class="flex items-center gap-3">
-        <a href="[https://www.linkedin.com/in/nithu-nair](https://www.linkedin.com/in/nithu-nair)" target="_blank" class="px-4 py-2 bg-blue-600 hover:bg-blue-500 text-white font-semibold text-xs rounded-xl transition shadow-lg shadow-blue-600/20">Connect on LinkedIn</a>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Hero Section -->
-  <section class="max-w-5xl mx-auto px-6 pt-24 pb-16 text-center space-y-6">
-    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-semibold">
-      <span class="w-2 h-2 rounded-full bg-blue-400 animate-pulse"></span>
-      Google I/O Live Attendee (Shoreline Amphitheatre) & Cloud Scholar
-    </div>
-    <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight text-white leading-tight">
-      Engineering Intelligence. <br/>
-      <span class="bg-gradient-to-r from-blue-400 via-green-400 to-yellow-400 bg-clip-text text-transparent">Designing Products for Scale.</span>
-    </h1>
-    <p class="text-lg md:text-xl text-slate-400 max-w-2xl mx-auto leading-relaxed">
-      Neethu Thalappan Koroth • Master's in CS candidate at NYIT, Vice President of CES, and MTA Enterprise Asset Management Analyst Intern. 2 years of professional data analyst experience in data collection, error correction, and visualization.
-    </p>
-    <div class="flex flex-wrap justify-center gap-4 pt-4">
-      <a href="#projects" class="px-8 py-3.5 bg-white text-slate-950 font-bold text-sm rounded-2xl hover:bg-slate-200 transition shadow-xl">Explore Flagship Products</a>
-      <a href="[https://meritpages.com/neethu829](https://meritpages.com/neethu829)" target="_blank" class="px-8 py-3.5 glass-card text-white font-semibold text-sm rounded-2xl hover:bg-slate-900 transition">View MeritPages Honors</a>
-    </div>
-  </section>
-
-  <!-- PM Philosophy / Manifesto Section -->
-  <section id="philosophy" class="max-w-6xl mx-auto px-6">
-    <div class="glass-card rounded-3xl p-8 md:p-12 space-y-8 border border-blue-500/20">
-      <div class="max-w-2xl">
-        <span class="text-xs font-semibold uppercase tracking-widest text-blue-400 block mb-2">APM Product Philosophy</span>
-        <h2 class="text-2xl md:text-3xl font-extrabold text-white">How I Build: User Empathy Meets Quantitative Telemetry</h2>
-      </div>
-      <div class="grid md:grid-cols-3 gap-6 text-sm">
-        <div class="bg-slate-900/60 p-6 rounded-2xl border border-slate-800 space-y-2">
-          <div class="text-blue-400 font-bold text-lg">01. Human-Centric Design</div>
-          <p class="text-slate-300 leading-relaxed">Prioritizing accessibility and cognitive safety, whether building sensory-safe wearable interfaces for children with ASD (*GloveSense*) or calming mindfulness studios (*Mood Jar AI*).</p>
-        </div>
-        <div class="bg-slate-900/60 p-6 rounded-2xl border border-slate-800 space-y-2">
-          <div class="text-green-400 font-bold text-lg">02. Rigorous Data Telemetry</div>
-          <p class="text-slate-300 leading-relaxed">Grounding roadmap decisions in quantitative rigor, evidenced by my 2 years as a Data Analyst and winning Best Data Policy Brief at The Oculus (*The People's Money Datathon*).</p>
-        </div>
-        <div class="bg-slate-900/60 p-6 rounded-2xl border border-slate-800 space-y-2">
-          <div class="text-yellow-400 font-bold text-lg">03. Zero-to-One Execution</div>
-          <p class="text-slate-300 leading-relaxed">Shipping 13 production-grade systems spanning multi-agent AI governance (*AegisShield*), hybrid intent search engines (*Course Search Advanced*), and full-stack real-time platforms.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Main Content Container -->
-  <main class="max-w-6xl mx-auto px-6 pb-32 space-y-24 pt-12">
-
-    <!-- Projects Grid Section -->
-    <section id="projects" class="space-y-12">
-      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-slate-800 pb-6">
-        <div>
-          <p class="text-xs font-semibold uppercase tracking-widest text-blue-400 mb-1">Product Portfolio</p>
-          <h2 class="text-3xl font-extrabold text-white">13 Flagship Products & Systems</h2>
-        </div>
-        <p class="text-sm text-slate-400 max-w-md">
-          Structured using PM STAR methodology (Problem, Strategy, Execution, Quantifiable Metric).
+  <!-- Header -->
+  <header class="max-w-5xl mx-auto px-6 pt-16 pb-12">
+    <div class="flex flex-col md:flex-row md:items-center justify-between gap-6">
+      <div>
+        <h1 class="text-4xl font-extrabold tracking-tight">Neethu Thalappan Koroth</h1>
+        <p class="text-lg text-blue-600 mt-1 font-semibold">Associate Product Manager & AI Systems Lead</p>
+        <p class="text-slate-600 mt-3 max-w-xl text-sm leading-relaxed">
+          Master's in Computer Science candidate & Data Analyst bridging enterprise governance, multi-agent architectures, and data systems. Google I/O Attendee & Google Cloud Scholar. Experienced in end-to-end product delivery: discovery, PRDs, sprint execution, and quantitative telemetry.
         </p>
       </div>
-
-      <div class="grid lg:grid-cols-2 gap-8">
-
-        <!-- Project 1: AegisShield -->
-        <article class="glass-card rounded-3xl p-8 space-y-6 card-glow transition duration-300 flex flex-col justify-between">
-          <div class="space-y-4">
-            <div class="flex items-center justify-between">
-              <span class="px-3 py-1 bg-indigo-500/10 border border-indigo-500/20 text-indigo-300 text-xs font-bold rounded-full">Enterprise AI Governance</span>
-              <a href="[https://www.kaggle.com/code/neethukoroth/aegisshield-multi-agent-enterprise-governance](https://www.kaggle.com/code/neethukoroth/aegisshield-multi-agent-enterprise-governance)" target="_blank" class="text-xs text-blue-400 hover:underline flex items-center gap-1 font-semibold">Kaggle Notebook ↗</a>
-            </div>
-            <h3 class="text-2xl font-bold text-white">AegisShield: Multi-Agent Enterprise Governance & Compliance Engine</h3>
-            <p class="text-slate-300 text-sm leading-relaxed">
-              <strong>User Friction:</strong> Enterprises deploying generative AI face compliance drift, regulatory risks, and unmonitored agentic tool calls across cross-functional operations.
-            </p>
-            <div class="bg-slate-900/50 p-4 rounded-xl border border-slate-800 space-y-2 text-xs text-slate-300">
-              <p><strong>PM Strategy & Solution:</strong> Architected a multi-agent governance platform separating compliance auditing, security enforcement, and telemetry monitors.</p>
-              <p><strong>Quantifiable Impact:</strong> Guaranteed 100% deterministic rule-verification alongside LLM reasoning, eliminating policy hallucinations and producing immutable audit logs.</p>
-            </div>
-          </div>
-          <div class="pt-4 border-t border-slate-800 flex flex-wrap gap-2">
-            <span class="px-2.5 py-1 bg-slate-900 text-slate-300 text-[11px] font-medium rounded-lg">Multi-Agent</span>
-            <span class="px-2.5 py-1 bg-slate-900 text-slate-300 text-[11px] font-medium rounded-lg">Python</span>
-            <span class="px-2.5 py-1 bg-slate-900 text-slate-300 text-[11px] font-medium rounded-lg">Enterprise Security</span>
-          </div>
-        </article>
-
-        <!-- Project 2: ml_agent -->
-        <article class="glass-card rounded-3xl p-8 space-y-6 card-glow transition duration-300 flex flex-col justify-between">
-          <div class="space-y-4">
-            <div class="flex items-center justify-between">
-              <span class="px-3 py-1 bg-cyan-500/10 border border-cyan-500/20 text-cyan-300 text-xs font-bold rounded-full">Autonomous ML Copilot</span>
-              <span class="text-xs text-slate-400 font-mono">Gemini 3.5 Flash</span>
-            </div>
-            <h3 class="text-2xl font-bold text-white">ml_agent: Autonomous Kaggle Data Science & LightGBM Pipeline</h3>
-            <p class="text-slate-300 text-sm leading-relaxed">
-              <strong>User Friction:</strong> Data science iteration speed is bottlenecked by manual baseline configuration, cross-validation setup, and submission packaging.
-            </p>
-            <div class="bg-slate-900/50 p-4 rounded-xl border border-slate-800 space-y-2 text-xs text-slate-300">
-              <p><strong>PM Strategy & Solution:</strong> Built an autonomous YAML-configured ML agent that executes 5-fold Stratified CV with LightGBM and automated submission validation.</p>
-              <p><strong>Quantifiable Impact:</strong> Achieved robust Out-of-Fold (OOF) AUC-ROC telemetry with zero data leakage and automated categorical encoding.</p>
-            </div>
-          </div>
-          <div class="pt-4 border-t border-slate-800 flex flex-wrap gap-2">
-            <span class="px-2.5 py-1 bg-slate-900 text-slate-300 text-[11px] font-medium rounded-lg">LightGBM</span>
-            <span class="px-2.5 py-1 bg-slate-900 text-slate-300 text-[11px] font-medium rounded-lg">Pandas</span>
-            <span class="px-2.5 py-1 bg-slate-900 text-slate-300 text-[11px] font-medium rounded-lg">Scikit-Learn</span>
-          </div>
-        </article>
-
-        <!-- Project 3: NYC Luxury Aesthetics Discovery -->
-        <article class="glass-card rounded-3xl p-8 space-y-6 card-glow transition duration-300 flex flex-col justify-between">
-          <div class="space-y-4">
-            <div class="flex items-center justify-between">
-              <span class="px-3 py-1 bg-amber-500/10 border border-amber-500/20 text-amber-300 text-xs font-bold rounded-full">Spatial Data Science</span>
-              <a href="[https://www.kaggle.com/code/neethukoroth/nyc-luxury-aesthetics-discovery](https://www.kaggle.com/code/neethukoroth/nyc-luxury-aesthetics-discovery)" target="_blank" class="text-xs text-blue-400 hover:underline flex items-center gap-1 font-semibold">Kaggle Notebook ↗</a>
-            </div>
-            <h3 class="text-2xl font-bold text-white">NYC Luxury Aesthetics Discovery: Urban Geospatial & Visual Intelligence</h3>
-            <p class="text-slate-300 text-sm leading-relaxed">
-              <strong>User Friction:</strong> High-end retail clustering and architectural brand hot-spots across NYC lacked quantitative spatial mapping and visual profiling.
-            </p>
-            <div class="bg-slate-900/50 p-4 rounded-xl border border-slate-800 space-y-2 text-xs text-slate-300">
-              <p><strong>PM Strategy & Solution:</strong> Published a Kaggle EDA notebook integrating kernel density estimation (KDE) and composite neighborhood scoring indices.</p>
-              <p><strong>Quantifiable Impact:</strong> Successfully isolated high-concentration luxury commercial corridors and architectural preservation zones across Manhattan.</p>
-            </div>
-          </div>
-          <div class="pt-4 border-t border-slate-800 flex flex-wrap gap-2">
-            <span class="px-2.5 py-1 bg-slate-900 text-slate-300 text-[11px] font-medium rounded-lg">Seaborn KDE</span>
-            <span class="px-2.5 py-1 bg-slate-900 text-slate-300 text-[11px] font-medium rounded-lg">Geo-Analytics</span>
-            <span class="px-2.5 py-1 bg-slate-900 text-slate-300 text-[11px] font-medium rounded-lg">Kaggle Published</span>
-          </div>
-        </article>
-
-        <!-- Project 4: Mood Jar AI -->
-        <article class="glass-card rounded-3xl p-8 space-y-6 card-glow transition duration-300 flex flex-col justify-between">
-          <div class="space-y-4">
-            <div class="flex items-center justify-between">
-              <span class="px-3 py-1 bg-purple-500/10 border border-purple-500/20 text-purple-300 text-xs font-bold rounded-full">GDG Coding Jam App</span>
-              <span class="text-xs text-slate-400 font-mono">Tailwind & JS</span>
-            </div>
-            <h3 class="text-2xl font-bold text-white">Mood Jar AI: Interactive Memory & Vibe Capture Studio</h3>
-            <p class="text-slate-300 text-sm leading-relaxed">
-              <strong>User Friction:</strong> Digital users experience cognitive fatigue during high-intensity work sprints without tactile, delightful mindfulness reflection tools.
-            </p>
-            <div class="bg-slate-900/50 p-4 rounded-xl border border-slate-800 space-y-2 text-xs text-slate-300">
-              <p><strong>PM Strategy & Solution:</strong> Shipped Mood Jar AI for GDG Coding Jams featuring physics-based drop animations and adaptive AI affirmations.</p>
-              <p><strong>Quantifiable Impact:</strong> Shipped live as a featured community project in GDG Coding Jams (Track 05), delighting users with low-friction emotional tracking.</p>
-            </div>
-          </div>
-          <div class="pt-4 border-t border-slate-800 flex flex-wrap gap-2">
-            <span class="px-2.5 py-1 bg-slate-900 text-slate-300 text-[11px] font-medium rounded-lg">Tailwind CSS</span>
-            <span class="px-2.5 py-1 bg-slate-900 text-slate-300 text-[11px] font-medium rounded-lg">JavaScript</span>
-            <span class="px-2.5 py-1 bg-slate-900 text-slate-300 text-[11px] font-medium rounded-lg">Interactive UI</span>
-          </div>
-        </article>
-
-        <!-- Project 5: Course Search Advanced -->
-        <article class="glass-card rounded-3xl p-8 space-y-6 card-glow transition duration-300 flex flex-col justify-between">
-          <div class="space-y-4">
-            <div class="flex items-center justify-between">
-              <span class="px-3 py-1 bg-blue-500/10 border border-blue-500/20 text-blue-300 text-xs font-bold rounded-full">Information Retrieval Capstone</span>
-              <span class="text-xs text-slate-400 font-mono">4,551 Courses</span>
-            </div>
-            <h3 class="text-2xl font-bold text-white">Course Search Advanced: Hybrid Intent-Aware Discovery Engine</h3>
-            <p class="text-slate-300 text-sm leading-relaxed">
-              <strong>User Friction:</strong> Learners spend 2.5 hours searching for courses due to synonym gaps and mismatched skill levels between platforms.
-            </p>
-            <div class="bg-slate-900/50 p-4 rounded-xl border border-slate-800 space-y-2 text-xs text-slate-300">
-              <p><strong>PM Strategy & Solution:</strong> Architected a hybrid search engine across 4,551 courses combining TF-IDF cosine similarity, Latent Semantic Analysis (SVD), and difficulty re-ranking.</p>
-              <p><strong>Quantifiable Impact:</strong> Improved skill-match accuracy from 60% to <strong>100%</strong> on held-out test queries via heuristic difficulty boosting.</p>
-            </div>
-          </div>
-          <div class="pt-4 border-t border-slate-800 flex flex-wrap gap-2">
-            <span class="px-2.5 py-1 bg-slate-900 text-slate-300 text-[11px] font-medium rounded-lg">Python</span>
-            <span class="px-2.5 py-1 bg-slate-900 text-slate-300 text-[11px] font-medium rounded-lg">Scikit-Learn</span>
-            <span class="px-2.5 py-1 bg-slate-900 text-slate-300 text-[11px] font-medium rounded-lg">Streamlit</span>
-          </div>
-        </article>
-
-        <!-- Project 6: The People's Money Datathon -->
-        <article class="glass-card rounded-3xl p-8 space-y-6 card-glow transition duration-300 flex flex-col justify-between">
-          <div class="space-y-4">
-            <div class="flex items-center justify-between">
-              <span class="px-3 py-1 bg-rose-500/10 border border-rose-500/20 text-rose-300 text-xs font-bold rounded-full">Award Winner • The Oculus</span>
-              <span class="text-xs text-rose-400 font-semibold">Best Data Policy Brief</span>
-            </div>
-            <h3 class="text-2xl font-bold text-white">The People's Money Datathon: 3-Year Healthcare Access Comparison Engine</h3>
-            <p class="text-slate-300 text-sm leading-relaxed">
-              <strong>User Friction:</strong> Participatory budgeting data across multiple years is fragmented across disparate schemas, obscuring healthcare trends.
-            </p>
-            <div class="bg-slate-900/50 p-4 rounded-xl border border-slate-800 space-y-2 text-xs text-slate-300">
-              <p><strong>PM Strategy & Solution:</strong> Engineered a 3-year data comparison dashboard standardizing 8,142+ records with an auto-playing comparison reel.</p>
-              <p><strong>Quantifiable Impact:</strong> Won Best Data Policy Brief at Whole Health Community Datathon, presented at The Oculus, uncovering a +161% growth in healthcare proposals.</p>
-            </div>
-          </div>
-          <div class="pt-4 border-t border-slate-800 flex flex-wrap gap-2">
-            <span class="px-2.5 py-1 bg-slate-900 text-slate-300 text-[11px] font-medium rounded-lg">Decision Intelligence</span>
-            <span class="px-2.5 py-1 bg-slate-900 text-slate-300 text-[11px] font-medium rounded-lg">Public Policy</span>
-            <span class="px-2.5 py-1 bg-slate-900 text-slate-300 text-[11px] font-medium rounded-lg">Data Visualization</span>
-          </div>
-        </article>
-
-        <!-- Project 7: AI StoryLens -->
-        <article class="glass-card rounded-3xl p-8 space-y-6 card-glow transition duration-300 flex flex-col justify-between">
-          <div class="space-y-4">
-            <div class="flex items-center justify-between">
-              <span class="px-3 py-1 bg-pink-500/10 border border-pink-500/20 text-pink-300 text-xs font-bold rounded-full">Multimodal Generative AI</span>
-              <span class="text-xs text-slate-400 font-mono">Gemini & gTTS</span>
-            </div>
-            <h3 class="text-2xl font-bold text-white">AI StoryLens: Multimodal Learning Story Generator</h3>
-            <p class="text-slate-300 text-sm leading-relaxed">
-              <strong>User Friction:</strong> Students struggle to grasp complex technical topics (e.g., Quantum Computing) from text-heavy explanations.
-            </p>
-            <div class="bg-slate-900/50 p-4 rounded-xl border border-slate-800 space-y-2 text-xs text-slate-300">
-              <p><strong>PM Strategy & Solution:</strong> Built a cinematic studio transforming topics into 3-scene narrative explanations with visuals, narration, and video slides.</p>
-              <p><strong>Quantifiable Impact:</strong> Delivered audience-adaptive storytelling with self-healing API fallback logic ensuring 99.9% uptime.</p>
-            </div>
-          </div>
-          <div class="pt-4 border-t border-slate-800 flex flex-wrap gap-2">
-            <span class="px-2.5 py-1 bg-slate-900 text-slate-300 text-[11px] font-medium rounded-lg">Streamlit</span>
-            <span class="px-2.5 py-1 bg-slate-900 text-slate-300 text-[11px] font-medium rounded-lg">Google Gemini</span>
-            <span class="px-2.5 py-1 bg-slate-900 text-slate-300 text-[11px] font-medium rounded-lg">Neural TTS</span>
-          </div>
-        </article>
-
-        <!-- Project 8: GloveSense -->
-        <article class="glass-card rounded-3xl p-8 space-y-6 card-glow transition duration-300 flex flex-col justify-between">
-          <div class="space-y-4">
-            <div class="flex items-center justify-between">
-              <span class="px-3 py-1 bg-emerald-500/10 border border-emerald-500/20 text-emerald-300 text-xs font-bold rounded-full">Featured 0-to-1 Product</span>
-              <span class="text-xs text-emerald-400 font-semibold">100% Cohort Success</span>
-            </div>
-            <h3 class="text-2xl font-bold text-white">GloveSense: AI Neuro-Rehabilitation Platform</h3>
-            <p class="text-slate-300 text-sm leading-relaxed">
-              <strong>User Friction:</strong> Standard clinical motor tests miss day-to-day motor learning, and children with ASD experience sensory overload during therapy.
-            </p>
-            <div class="bg-slate-900/50 p-4 rounded-xl border border-slate-800 space-y-2 text-xs text-slate-300">
-              <p><strong>PM Strategy & Solution:</strong> Designed an 8-channel wearable glove and gamified dashboard with sensory-safe C-shape rest phases and edge ML inference.</p>
-              <p><strong>Quantifiable Impact:</strong> 100% of cohort (14/14 participants) demonstrated improved Macro Accuracy (gains up to +0.63).</p>
-            </div>
-          </div>
-          <div class="pt-4 border-t border-slate-800 flex flex-wrap gap-2">
-            <span class="px-2.5 py-1 bg-slate-900 text-slate-300 text-[11px] font-medium rounded-lg">Wearable IoT</span>
-            <span class="px-2.5 py-1 bg-slate-900 text-slate-300 text-[11px] font-medium rounded-lg">Edge ML</span>
-            <span class="px-2.5 py-1 bg-slate-900 text-slate-300 text-[11px] font-medium rounded-lg">Dash/React</span>
-          </div>
-        </article>
-
-        <!-- Project 9: Enterprise AI Analytics -->
-        <article class="glass-card rounded-3xl p-8 space-y-6 card-glow transition duration-300 flex flex-col justify-between">
-          <div class="space-y-4">
-            <div class="flex items-center justify-between">
-              <span class="px-3 py-1 bg-purple-500/10 border border-purple-500/20 text-purple-300 text-xs font-bold rounded-full">Enterprise Architecture</span>
-              <span class="text-xs text-slate-400 font-mono">AWS Bedrock & Lambda</span>
-            </div>
-            <h3 class="text-2xl font-bold text-white">Generative AI Analytics & Intelligence Platform (MTA)</h3>
-            <p class="text-slate-300 text-sm leading-relaxed">
-              <strong>User Friction:</strong> Manual data aggregation absorbed over 60% of operational analyst bandwidth across transit asset maintenance workflows.
-            </p>
-            <div class="bg-slate-900/50 p-4 rounded-xl border border-slate-800 space-y-2 text-xs text-slate-300">
-              <p><strong>PM Strategy & Solution:</strong> Architected an agentic, serverless analytics platform combining AWS Bedrock, SageMaker, and Lambda.</p>
-              <p><strong>Quantifiable Impact:</strong> Reduced manual analyst data ingestion overhead by 35% with automated schema validation.</p>
-            </div>
-          </div>
-          <div class="pt-4 border-t border-slate-800 flex flex-wrap gap-2">
-            <span class="px-2.5 py-1 bg-slate-900 text-slate-300 text-[11px] font-medium rounded-lg">AWS Bedrock</span>
-            <span class="px-2.5 py-1 bg-slate-900 text-slate-300 text-[11px] font-medium rounded-lg">Serverless Lambda</span>
-            <span class="px-2.5 py-1 bg-slate-900 text-slate-300 text-[11px] font-medium rounded-lg">SageMaker</span>
-          </div>
-        </article>
-
-        <!-- Project 10: Marketplace Pulse -->
-        <article class="glass-card rounded-3xl p-8 space-y-6 card-glow transition duration-300 flex flex-col justify-between">
-          <div class="space-y-4">
-            <div class="flex items-center justify-between">
-              <span class="px-3 py-1 bg-teal-500/10 border border-teal-500/20 text-teal-300 text-xs font-bold rounded-full">Decision Intelligence</span>
-              <span class="text-xs text-slate-400 font-mono">760k+ Listings</span>
-            </div>
-            <h3 class="text-2xl font-bold text-white">Marketplace Pulse: Dynamic Pricing & Seller Intelligence Engine</h3>
-            <p class="text-slate-300 text-sm leading-relaxed">
-              <strong>User Friction:</strong> Independent merchants face inventory stagnation due to opaque pricing and unpredictable multi-regional transit costs.
-            </p>
-            <div class="bg-slate-900/50 p-4 rounded-xl border border-slate-800 space-y-2 text-xs text-slate-300">
-              <p><strong>PM Strategy & Solution:</strong> Engineered an analytics copilot processing 760k+ listings with Random Forest pricing and Dijkstra fulfillment routing.</p>
-              <p><strong>Quantifiable Impact:</strong> Minimized underpricing risk (RMSE: 54.22) while balancing trust metrics and platform liquidity.</p>
-            </div>
-          </div>
-          <div class="pt-4 border-t border-slate-800 flex flex-wrap gap-2">
-            <span class="px-2.5 py-1 bg-slate-900 text-slate-300 text-[11px] font-medium rounded-lg">Random Forest</span>
-            <span class="px-2.5 py-1 bg-slate-900 text-slate-300 text-[11px] font-medium rounded-lg">Dijkstra Routing</span>
-            <span class="px-2.5 py-1 bg-slate-900 text-slate-300 text-[11px] font-medium rounded-lg">Python</span>
-          </div>
-        </article>
-
-        <!-- Project 11: PulseStream Big Data NLP -->
-        <article class="glass-card rounded-3xl p-8 space-y-6 card-glow transition duration-300 flex flex-col justify-between">
-          <div class="space-y-4">
-            <div class="flex items-center justify-between">
-              <span class="px-3 py-1 bg-sky-500/10 border border-sky-500/20 text-sky-300 text-xs font-bold rounded-full">Big Data & Streaming NLP</span>
-              <span class="text-xs text-slate-400 font-mono">Apache Spark</span>
-            </div>
-            <h3 class="text-2xl font-bold text-white">PulseStream: Real-Time Social Sentiment & Analytics Engine</h3>
-            <p class="text-slate-300 text-sm leading-relaxed">
-              <strong>User Friction:</strong> High-velocity unstructured social streams cause severe reporting latency and memory bottlenecks during live product launches.
-            </p>
-            <div class="bg-slate-900/50 p-4 rounded-xl border border-slate-800 space-y-2 text-xs text-slate-300">
-              <p><strong>PM Strategy & Solution:</strong> Built a distributed text analytics pipeline pairing Twitter API with an 8-core Apache Spark cluster and zero-shuffle serialization.</p>
-              <p><strong>Quantifiable Impact:</strong> Benchmarked classifiers on 320k samples to output live executive sentiment telemetry.</p>
-            </div>
-          </div>
-          <div class="pt-4 border-t border-slate-800 flex flex-wrap gap-2">
-            <span class="px-2.5 py-1 bg-slate-900 text-slate-300 text-[11px] font-medium rounded-lg">Apache Spark</span>
-            <span class="px-2.5 py-1 bg-slate-900 text-slate-300 text-[11px] font-medium rounded-lg">PySpark</span>
-            <span class="px-2.5 py-1 bg-slate-900 text-slate-300 text-[11px] font-medium rounded-lg">NLP Classifiers</span>
-          </div>
-        </article>
-
-        <!-- Project 12: BondAgent FinTech AI -->
-        <article class="glass-card rounded-3xl p-8 space-y-6 card-glow transition duration-300 flex flex-col justify-between">
-          <div class="space-y-4">
-            <div class="flex items-center justify-between">
-              <span class="px-3 py-1 bg-amber-500/10 border border-amber-500/20 text-amber-300 text-xs font-bold rounded-full">Agentic FinTech AI</span>
-              <span class="text-xs text-slate-400 font-mono">AWS Bedrock Agents</span>
-            </div>
-            <h3 class="text-2xl font-bold text-white">BondAgent: Multi-Agent Fixed-Income Copilot & Yield Engine</h3>
-            <p class="text-slate-300 text-sm leading-relaxed">
-              <strong>User Friction:</strong> Fixed-income investors struggle to synthesize real-time Treasury yield curves and bond duration risk across disjointed market terminals.
-            </p>
-            <div class="bg-slate-900/50 p-4 rounded-xl border border-slate-800 space-y-2 text-xs text-slate-300">
-              <p><strong>PM Strategy & Solution:</strong> Engineered a conversational copilot using AWS Bedrock Agents and deterministic Lambda tool-calling.</p>
-              <p><strong>Quantifiable Impact:</strong> Eliminated LLM math hallucinations while ensuring secure JWT authentication and resilient S3 ingestion caching.</p>
-            </div>
-          </div>
-          <div class="pt-4 border-t border-slate-800 flex flex-wrap gap-2">
-            <span class="px-2.5 py-1 bg-slate-900 text-slate-300 text-[11px] font-medium rounded-lg">AWS Bedrock</span>
-            <span class="px-2.5 py-1 bg-slate-900 text-slate-300 text-[11px] font-medium rounded-lg">Lambda</span>
-            <span class="px-2.5 py-1 bg-slate-900 text-slate-300 text-[11px] font-medium rounded-lg">Cognito</span>
-          </div>
-        </article>
-
-        <!-- Project 13: Equinox Stock Exchange -->
-        <article class="glass-card rounded-3xl p-8 space-y-6 card-glow transition duration-300 flex flex-col justify-between lg:col-span-2">
-          <div class="space-y-4">
-            <div class="flex items-center justify-between">
-              <span class="px-3 py-1 bg-indigo-500/10 border border-indigo-500/20 text-indigo-300 text-xs font-bold rounded-full">Full-Stack Real-Time Systems</span>
-              <span class="text-xs text-slate-400 font-mono">FastAPI, WebSockets & Redis</span>
-            </div>
-            <h3 class="text-2xl font-bold text-white">Equinox: Real-Time Stock Exchange & Analytics Platform</h3>
-            <p class="text-slate-300 text-sm leading-relaxed">
-              <strong>User Friction:</strong> Traders require sub-second price updates and technical indicators without page reloads, demanding high-frequency websocket broadcasting.
-            </p>
-            <div class="bg-slate-900/50 p-4 rounded-xl border border-slate-800 space-y-2 text-xs text-slate-300">
-              <p><strong>PM Strategy & Solution:</strong> Built an end-to-end trading platform featuring a FastAPI asynchronous backend, Redis pub/sub broker, and PostgreSQL persistence.</p>
-              <p><strong>Quantifiable Impact:</strong> Ensured low-latency streaming to concurrent dashboard viewers with automated mock-data fallbacks and Docker containerization.</p>
-            </div>
-          </div>
-          <div class="pt-4 border-t border-slate-800 flex flex-wrap gap-2">
-            <span class="px-2.5 py-1 bg-slate-900 text-slate-300 text-[11px] font-medium rounded-lg">FastAPI</span>
-            <span class="px-2.5 py-1 bg-slate-900 text-slate-300 text-[11px] font-medium rounded-lg">WebSockets</span>
-            <span class="px-2.5 py-1 bg-slate-900 text-slate-300 text-[11px] font-medium rounded-lg">Redis Pub/Sub</span>
-            <span class="px-2.5 py-1 bg-slate-900 text-slate-300 text-[11px] font-medium rounded-lg">Docker</span>
-          </div>
-        </article>
-
+      <div class="flex flex-wrap md:flex-col gap-2 shrink-0">
+        <a href="https://www.linkedin.com/in/nithu-nair" target="_blank" class="px-4 py-2 bg-slate-900 text-white rounded-lg text-xs font-semibold text-center hover:bg-slate-800 transition">LinkedIn Profile</a>
+        <a href="https://github.com/neethunairkoroth" target="_blank" class="px-4 py-2 bg-white border border-slate-300 rounded-lg text-xs font-semibold text-center hover:bg-slate-100 transition">GitHub</a>
+        <a href="https://meritpages.com/neethu829" target="_blank" class="px-4 py-2 bg-white border border-slate-300 rounded-lg text-xs font-semibold text-center hover:bg-slate-100 transition">MeritPages Honors</a>
+        <a href="https://www.kaggle.com/code/neethukoroth/aegisshield-multi-agent-enterprise-governance" target="_blank" class="px-4 py-2 bg-white border border-slate-300 rounded-lg text-xs font-semibold text-center hover:bg-slate-100 transition">Kaggle Portfolio</a>
+        <a href="mailto:neethunairkoroth@gmail.com" class="px-4 py-2 bg-white border border-slate-300 rounded-lg text-xs font-semibold text-center hover:bg-slate-100 transition">Contact Me</a>
       </div>
-    </section>
+    </div>
+  </header>
 
-    <!-- Professional Experience Section -->
-    <section id="experience" class="space-y-8">
-      <div class="border-b border-slate-800 pb-6">
-        <p class="text-xs font-semibold uppercase tracking-widest text-cyan-400 mb-1">Career History</p>
-        <h2 class="text-3xl font-extrabold text-white">Professional & Analytics Experience</h2>
-      </div>
+  <!-- Main Content -->
+  <main class="max-w-5xl mx-auto px-6 pb-20 space-y-12">
 
-      <div class="grid md:grid-cols-2 gap-6">
-        <div class="glass-card rounded-3xl p-8 space-y-3">
-          <span class="px-2.5 py-1 bg-cyan-500/10 border border-cyan-500/20 text-cyan-300 text-[11px] font-bold rounded-full">Data Analytics</span>
-          <h3 class="font-bold text-white text-xl">Data Analyst (2 Years Experience)</h3>
-          <p class="text-xs text-slate-400">Core Focus: Data Collection, Error Correction & Visualization</p>
-          <p class="text-xs text-slate-300 leading-relaxed">
-            Executed rigorous data cleaning, anomaly detection, data collection pipelines, and interactive visualization dashboards to support decision-making.
-          </p>
-        </div>
-
-        <div class="glass-card rounded-3xl p-8 space-y-3">
-          <span class="px-2.5 py-1 bg-green-500/10 border border-green-500/20 text-green-300 text-[11px] font-bold rounded-full">Transit Infrastructure</span>
-          <h3 class="font-bold text-white text-xl">Enterprise Asset Management Analyst Intern</h3>
-          <p class="text-xs text-slate-400">Metropolitan Transportation Authority (MTA) • New York</p>
-          <p class="text-xs text-slate-300 leading-relaxed">
-            Driving data-driven operational workflows, schema validation, and transit asset maintenance analytics across New York City’s critical infrastructure.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Achievements & Honors Section -->
-    <section id="achievements" class="space-y-8">
-      <div class="border-b border-slate-800 pb-6 flex flex-col md:flex-row md:items-end justify-between gap-4">
+    <!-- Project 1: AegisShield Multi-Agent Enterprise Governance -->
+    <section class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm space-y-6">
+      <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-4">
         <div>
-          <p class="text-xs font-semibold uppercase tracking-widest text-amber-400 mb-1">Honors & Recognition</p>
-          <h2 class="text-3xl font-extrabold text-white">Achievements & MeritPages Honors</h2>
+          <span class="text-xs font-semibold uppercase tracking-wider text-indigo-600">Enterprise AI Governance & Multi-Agent Architecture</span>
+          <h2 class="text-2xl font-bold mt-1">AegisShield: Multi-Agent Enterprise Governance & Compliance Engine</h2>
         </div>
-        <a href="[https://meritpages.com/neethu829](https://meritpages.com/neethu829)" target="_blank" class="px-4 py-2 glass-card text-amber-300 hover:text-white text-xs font-semibold rounded-xl transition flex items-center gap-1 w-fit">
-          Verify on MeritPages ↗
-        </a>
+        <div class="flex gap-2">
+          <a href="https://www.kaggle.com/code/neethukoroth/aegisshield-multi-agent-enterprise-governance" target="_blank" class="text-xs font-semibold px-3 py-1 bg-indigo-50 text-indigo-700 rounded-full border border-indigo-200 hover:bg-indigo-100 transition">Kaggle Notebook ↗</a>
+        </div>
       </div>
 
-      <div class="grid md:grid-cols-3 gap-6">
-        <div class="glass-card rounded-3xl p-6 space-y-3">
-          <span class="px-2.5 py-1 bg-rose-500/10 border border-rose-500/20 text-rose-300 text-[11px] font-bold rounded-full">Civic Leadership</span>
-          <h3 class="font-bold text-white text-lg">Civic Engagement Award</h3>
-          <p class="text-xs text-slate-400">Student Engagement and Development Awards, NYIT (2026)</p>
-          <p class="text-xs text-slate-300 leading-relaxed">Recognized for outstanding campus leadership, public policy engagement, and community impact.</p>
+      <div class="grid md:grid-cols-2 gap-6 text-sm">
+        <div>
+          <h3 class="font-bold text-slate-900">Enterprise Risk & Governance Problem</h3>
+          <p class="text-slate-600 mt-1 leading-relaxed">
+            As enterprises rapidly deploy generative AI and autonomous workflows across cross-functional operations, fragmented compliance checking, security policy drift, and unmonitored agent interactions introduce severe regulatory and operational risks.
+          </p>
         </div>
-
-        <div class="glass-card rounded-3xl p-6 space-y-3">
-          <span class="px-2.5 py-1 bg-blue-500/10 border border-blue-500/20 text-blue-300 text-[11px] font-bold rounded-full">Data Policy Victory</span>
-          <h3 class="font-bold text-white text-lg">Best Data Policy Brief</h3>
-          <p class="text-xs text-slate-400">Whole Health Datathon & NYC Pop-Up at The Oculus (2026)</p>
-          <p class="text-xs text-slate-300 leading-relaxed">Awarded top honors for rigorous data policy analysis and participatory budgeting insights.</p>
+        <div>
+          <h3 class="font-bold text-slate-900">Multi-Agent Governance Solution</h3>
+          <p class="text-slate-600 mt-1 leading-relaxed">
+            Architected `AegisShield`, a robust multi-agent enterprise governance framework published via Kaggle that automates real-time compliance auditing, access control validation, and policy enforcement across agentic workflows.
+          </p>
         </div>
+      </div>
 
-        <div class="glass-card rounded-3xl p-6 space-y-3">
-          <span class="px-2.5 py-1 bg-purple-500/10 border border-purple-500/20 text-purple-300 text-[11px] font-bold rounded-full">Executive Board</span>
-          <h3 class="font-bold text-white text-lg">Vice President, CES</h3>
-          <p class="text-xs text-slate-400">Center for Entrepreneurial Studies (2025–2026)</p>
-          <p class="text-xs text-slate-300 leading-relaxed">Led student founder outreach, pitch competitions, and cross-functional entrepreneurial programs.</p>
+      <div class="space-y-3 text-sm bg-slate-50 p-5 rounded-xl border border-slate-100">
+        <h3 class="font-bold text-slate-900">Core Technical PM Decisions & Architecture</h3>
+        <ul class="list-disc list-inside space-y-2 text-slate-600">
+          <li><strong>Specialized Agent Enclave:</strong> Decoupled governance into dedicated compliance auditor, security policy enforcer, and telemetry monitor agents to prevent systemic oversight blind spots.</li>
+          <li><strong>Deterministic Guardrail Verification:</strong> Integrated rule-based validation checks alongside LLM reasoning to ensure zero policy hallucination on high-stakes corporate data actions.</li>
+          <li><strong>Audit Trail Telemetry:</strong> Formulated structured JSON logging for every agent tool call and decision branch, satisfying rigorous enterprise auditing and governance standards.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Project 2: Autonomous ML Kaggle Agent -->
+    <section class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm space-y-6">
+      <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-4">
+        <div>
+          <span class="text-xs font-semibold uppercase tracking-wider text-cyan-600">Autonomous Agentic AI & Machine Learning Systems</span>
+          <h2 class="text-2xl font-bold mt-1">ml_agent: Autonomous Kaggle Data Science & LightGBM Pipeline Copilot</h2>
+        </div>
+        <div class="flex gap-2">
+          <span class="text-xs font-semibold px-3 py-1 bg-cyan-50 text-cyan-700 rounded-full border border-cyan-200">LightGBM, Stratified CV & Agentic Workflows</span>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6 text-sm">
+        <div>
+          <h3 class="font-bold text-slate-900">Problem & Engineering Challenge</h3>
+          <p class="text-slate-600 mt-1 leading-relaxed">
+            Competitive data science workflows require rapid baseline iteration, robust out-of-fold validation, and rigorous submission validation without manual configuration bottlenecks.
+          </p>
+        </div>
+        <div>
+          <h3 class="font-bold text-slate-900">Agentic Architecture</h3>
+          <p class="text-slate-600 mt-1 leading-relaxed">
+            Engineered an autonomous YAML-configured machine learning agent (`ml_agent` powered by Gemini 3.5 Flash) designed to execute baseline pipelines, evaluate stratified cross-validation metrics, and automate leaderboard submissions.
+          </p>
+        </div>
+      </div>
+
+      <div class="space-y-3 text-sm bg-slate-50 p-5 rounded-xl border border-slate-100">
+        <h3 class="font-bold text-slate-900">Core Technical PM Decisions & Pipeline Execution</h3>
+        <ul class="list-disc list-inside space-y-2 text-slate-600">
+          <li><strong>Stratified K-Fold Validation:</strong> Implemented 5-fold Stratified Cross-Validation with LightGBM binary classification (`LGBMClassifier`), ensuring zero data leakage and reliable Out-of-Fold (OOF) AUC-ROC telemetry.</li>
+          <li><strong>Automated Categorical Encoding:</strong> Built dynamic type detection to automatically cast object dtype columns into LightGBM categorical features, optimizing memory efficiency and gradient boosting split quality.</li>
+          <li><strong>Agentic Tool Orchestration:</strong> Configured modular agent actions (`run_command`, `write_file`, `edit_file`, `submit_predictions`) for closed-loop model optimization and submission locking.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Project 3: NYC Luxury Aesthetics Discovery -->
+    <section class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm space-y-6">
+      <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-4">
+        <div>
+          <span class="text-xs font-semibold uppercase tracking-wider text-amber-600">Spatial Data Science & Urban Aesthetics Analytics</span>
+          <h2 class="text-2xl font-bold mt-1">NYC Luxury Aesthetics Discovery: Urban Geospatial & Visual Intelligence</h2>
+        </div>
+        <div class="flex gap-2">
+          <a href="https://www.kaggle.com/code/neethukoroth/nyc-luxury-aesthetics-discovery" target="_blank" class="text-xs font-semibold px-3 py-1 bg-amber-50 text-amber-700 rounded-full border border-amber-200 hover:bg-amber-100 transition">Kaggle Notebook ↗</a>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6 text-sm">
+        <div>
+          <h3 class="font-bold text-slate-900">Urban Discovery & Problem</h3>
+          <p class="text-slate-600 mt-1 leading-relaxed">
+            Metropolitan brand positioning, high-end retail clustering, and aesthetic hot-spots across New York City neighborhoods lack quantitative spatial mapping, making neighborhood aesthetic profiling opaque for urban planners and merchants.
+          </p>
+        </div>
+        <div>
+          <h3 class="font-bold text-slate-900">Data Science Solution</h3>
+          <p class="text-slate-600 mt-1 leading-relaxed">
+            Published a comprehensive Kaggle notebook (`nyc-luxury-aesthetics-discovery`) analyzing multi-dimensional urban aesthetic signals, spatial venue clustering, and architectural density across Manhattan and surrounding boroughs.
+          </p>
+        </div>
+      </div>
+
+      <div class="space-y-3 text-sm bg-slate-50 p-5 rounded-xl border border-slate-100">
+        <h3 class="font-bold text-slate-900">Key Analytical Methods & Visual Telemetry</h3>
+        <ul class="list-disc list-inside space-y-2 text-slate-600">
+          <li><strong>Geospatial Density Mapping:</strong> Utilized Pandas and Seaborn kernel density estimation (KDE) and scatter geospatial plotting to isolate high-concentration luxury commercial corridors.</li>
+          <li><strong>Multi-Factor Aesthetics Scoring:</strong> Formulated composite neighborhood aesthetic indices weighing architectural preservation, premium storefront density, and pedestrian accessibility.</li>
+          <li><strong>Published Kaggle Research:</strong> Successfully documented and shared interactive exploratory data analysis (EDA) live on Kaggle for urban data science practitioners.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Project 4: Mood Jar AI -->
+    <section class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm space-y-6">
+      <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-4">
+        <div>
+          <span class="text-xs font-semibold uppercase tracking-wider text-purple-600">GDG Coding Jams Featured App</span>
+          <h2 class="text-2xl font-bold mt-1">Mood Jar AI: Interactive Memory & Vibe Capture Studio</h2>
+        </div>
+        <div class="flex gap-2">
+          <span class="text-xs font-semibold px-3 py-1 bg-purple-50 text-purple-700 rounded-full border border-purple-200">Tailwind, JS & AI Reflections</span>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6 text-sm">
+        <div>
+          <h3 class="font-bold text-slate-900">Problem & User Need</h3>
+          <p class="text-slate-600 mt-1 leading-relaxed">
+            Digital users frequently experience emotional fatigue and stress during fast-paced work sprints, lacking lightweight, tactile, and delightful tools to pause, reflect, and capture daily mental well-being.
+          </p>
+        </div>
+        <div>
+          <h3 class="font-bold text-slate-900">Product Solution</h3>
+          <p class="text-slate-600 mt-1 leading-relaxed">
+            Shipped Mood Jar AI for Google Developer Groups Coding Jams, an interactive digital memory jar that transforms daily moods and vibes into glowing, animated keepsake pills paired with instant AI affirmations.
+          </p>
+        </div>
+      </div>
+
+      <div class="space-y-3 text-sm bg-slate-50 p-5 rounded-xl border border-slate-100">
+        <h3 class="font-bold text-slate-900">Key Features & Technical Implementation</h3>
+        <ul class="list-disc list-inside space-y-2 text-slate-600">
+          <li><strong>Tactile Visual Container:</strong> Designed a custom glass-effect drop container with physics-inspired drop animations and dynamic color-vibe pill assignment.</li>
+          <li><strong>Adaptive Affirmation Engine:</strong> Instant reflection generator matching user emotional input to supportive psychological prompts and mindfulness cues.</li>
+          <li><strong>Deployed & Featured:</strong> Shipped live as a featured community project in GDG Coding Jams (Track 05: Mood Jar).</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Project 5: Course Search Advanced -->
+    <section class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm space-y-6">
+      <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-4">
+        <div>
+          <span class="text-xs font-semibold uppercase tracking-wider text-blue-600">Information Retrieval Capstone Project</span>
+          <h2 class="text-2xl font-bold mt-1">Course Search Advanced: Hybrid Intent-Aware Discovery Engine</h2>
+        </div>
+        <div class="flex gap-2">
+          <span class="text-xs font-semibold px-3 py-1 bg-blue-50 text-blue-700 rounded-full border border-blue-200">TF-IDF, LSA & Skill Boosting</span>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6 text-sm">
+        <div>
+          <h3 class="font-bold text-slate-900">Problem & Lexical Friction</h3>
+          <p class="text-slate-600 mt-1 leading-relaxed">
+            Online learners spend an average of 2.5 hours searching for courses due to the lexical gap (e.g., searching "AI" misses "Machine Learning") and mismatched difficulty levels, leading to high frustration and drop-out rates.
+          </p>
+        </div>
+        <div>
+          <h3 class="font-bold text-slate-900">Hybrid IR Solution</h3>
+          <p class="text-slate-600 mt-1 leading-relaxed">
+            Architected a multi-layer search engine across 4,551 curated courses from Coursera and Udemy, combining baseline TF-IDF cosine similarity, Latent Semantic Analysis (LSA via TruncatedSVD), and skill-level re-ranking.
+          </p>
+        </div>
+      </div>
+
+      <div class="space-y-3 text-sm bg-slate-50 p-5 rounded-xl border border-slate-100">
+        <h3 class="font-bold text-slate-900">Technical PM Decisions & Validated Metrics</h3>
+        <ul class="list-disc list-inside space-y-2 text-slate-600">
+          <li><strong>Zipf's Law Corpus Validation:</strong> Statistically profiled course vocabulary to confirm power-law distribution, justifying IDF weighting to effectively down-weight stop words and elevate domain-specific discriminative terms.</li>
+          <li><strong>Semantic SVD Projection:</strong> Reduced high-dimensional sparse term-document matrices into 100 latent semantic dimensions using TruncatedSVD, bridging synonymy gaps between related technical domains.</li>
+          <li><strong>Validated Skill-Match Accuracy:</strong> Improved skill-match accuracy from 60% (baseline lexical search) to <strong>100%</strong> on held-out test queries (e.g., "beginner python") via heuristic difficulty boosting.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Project 6: The People's Money Datathon Dashboard (Award Winner) -->
+    <section class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm space-y-6">
+      <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-4">
+        <div>
+          <span class="text-xs font-semibold uppercase tracking-wider text-rose-600">Award-Winning Decision Intelligence Platform</span>
+          <h2 class="text-2xl font-bold mt-1">The People's Money Datathon: 3-Year Healthcare Access Comparison Engine</h2>
+        </div>
+        <div class="flex gap-2">
+          <span class="text-xs font-semibold px-3 py-1 bg-rose-50 text-rose-700 rounded-full border border-rose-200">Best Data Policy Brief Winner</span>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6 text-sm">
+        <div>
+          <h3 class="font-bold text-slate-900">Problem & Civic Opportunity</h3>
+          <p class="text-slate-600 mt-1 leading-relaxed">
+            City participatory budgeting data across multiple years is highly fragmented across disparate schemas, making it difficult for policymakers and community leaders to track healthcare access trends and resident demand.
+          </p>
+        </div>
+        <div>
+          <h3 class="font-bold text-slate-900">Platform Solution</h3>
+          <p class="text-slate-600 mt-1 leading-relaxed">
+            Engineered an interactive 3-year data comparison dashboard that auto-loads Year 1, Year 2, and Year 3 People's Money datasets, standardizing 8,142+ records and highlighting a 161% growth in healthcare-related proposals.
+          </p>
+        </div>
+      </div>
+
+      <div class="space-y-3 text-sm bg-slate-50 p-5 rounded-xl border border-slate-100">
+        <h3 class="font-bold text-slate-900">Execution, Recognition & Impact</h3>
+        <ul class="list-disc list-inside space-y-2 text-slate-600">
+          <li><strong>Award-Winning Policy Brief:</strong> Won <strong>Best Data Policy Brief</strong> at the Whole Health Community Datathon and presented live at the NYC Public Interest Technology Pop-Up inside <strong>The Oculus at the World Trade Center</strong>.</li>
+          <li><strong>Animated Comparison Reel:</strong> Built a right-side auto-playing comparison reel cycling through dataset snapshots and growth metrics (+997 records YoY in Year 3).</li>
+          <li><strong>Cross-Sector Insights:</strong> Surfaced that residents define healthcare access broadly to include mental wellness (32 subthemes), environmental health, and community outreach.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Project 7: AI StoryLens -->
+    <section class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm space-y-6">
+      <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-4">
+        <div>
+          <span class="text-xs font-semibold uppercase tracking-wider text-pink-600">Multimodal Generative AI & EdTech</span>
+          <h2 class="text-2xl font-bold mt-1">AI StoryLens: Multimodal Learning Story Generator</h2>
+        </div>
+        <div class="flex gap-2">
+          <span class="text-xs font-semibold px-3 py-1 bg-pink-50 text-pink-700 rounded-full border border-pink-200">Gemini, gTTS & Streamlit</span>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6 text-sm">
+        <div>
+          <h3 class="font-bold text-slate-900">User Need & Comprehension Gap</h3>
+          <p class="text-slate-600 mt-1 leading-relaxed">
+            Students struggle to grasp dense technical material and abstract concepts (like Quantum Computing or Relativity) from text-heavy explanations, causing cognitive overload and disengagement.
+          </p>
+        </div>
+        <div>
+          <h3 class="font-bold text-slate-900">Multimodal Solution</h3>
+          <p class="text-slate-600 mt-1 leading-relaxed">
+            Built an end-to-end cinematic storytelling studio that transforms any topic into a structured 3-scene narrative featuring automated script generation, atmospheric visual prompts, synthetic voice narration, and video slides.
+          </p>
+        </div>
+      </div>
+
+      <div class="space-y-3 text-sm bg-slate-50 p-5 rounded-xl border border-slate-100">
+        <h3 class="font-bold text-slate-900">Core Technical PM Decisions</h3>
+        <ul class="list-disc list-inside space-y-2 text-slate-600">
+          <li><strong>Audience-Adaptive Prompting:</strong> Engineered dynamic prompt structures allowing users to adapt narratives by audience tone (Kid, Student, Professional) and cinematic style (Vintage Noir, Cyberpunk, 3D Pixar).</li>
+          <li><strong>Self-Healing Fallback Logic:</strong> Implemented robust model fallback sequencing across Gemini 2.0 Flash, 1.5 Pro, and 1.0 Pro APIs to guarantee 99.9% uptime and bypass rate-limit bottlenecks.</li>
+          <li><strong>Synchronized Multimodal Pipeline:</strong> Integrated Google Generative AI for structured JSON scripting, Pollinations AI for atmospheric image generation, and gTTS for synchronized audio narration.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Project 8: GloveSense -->
+    <section class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm space-y-6">
+      <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-4">
+        <div>
+          <span class="text-xs font-semibold uppercase tracking-wider text-emerald-600">Featured 0-to-1 Product</span>
+          <h2 class="text-2xl font-bold mt-1">GloveSense: AI Neuro-Rehabilitation Platform</h2>
+        </div>
+        <div class="flex gap-2">
+          <span class="text-xs font-semibold px-3 py-1 bg-emerald-50 text-emerald-700 rounded-full border border-emerald-200">Deployed Clinical Study</span>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6 text-sm">
+        <div>
+          <h3 class="font-bold text-slate-900">User Discovery & Problem</h3>
+          <p class="text-slate-600 mt-1 leading-relaxed">
+            Standard clinical motor tests (BOT-2) only evaluate children before and after multi-week therapy, missing day-to-day motor learning. Children with ASD experience sensory overload, rapid fatigue, and motor carryover during repetitive clinic trials.
+          </p>
+        </div>
+        <div>
+          <h3 class="font-bold text-slate-900">The Product Solution</h3>
+          <p class="text-slate-600 mt-1 leading-relaxed">
+            An 8-channel inductive wearable glove paired with an interactive Dash/React serious-game dashboard that translates 14 hand gestures into gamified therapeutic exercises across four biomechanical difficulty tiers.
+          </p>
+        </div>
+      </div>
+
+      <div class="space-y-3 text-sm bg-slate-50 p-5 rounded-xl border border-slate-100">
+        <h3 class="font-bold text-slate-900">Core PM Decisions & Guardrails</h3>
+        <ul class="list-disc list-inside space-y-2 text-slate-600">
+          <li><strong>Sensory-Safe Guardrails:</strong> Replaced stressful countdown timers and high-contrast visuals with mandatory neutral "C-Shape" rest phases and low-saturation background color washes to prevent sensory overstimulation and motor perseveration.</li>
+          <li><strong>Edge ML Trade-off:</strong> Prioritized lightweight Random Forest classification on 8 energy channels over deep neural networks, maintaining sub-200ms local inference on low-power clinic laptops without dropped serial packets.</li>
+          <li><strong>Validated Outcomes:</strong> 100% of cohort (14/14 participants) demonstrated improved Macro Accuracy (gains up to +0.63) and consistent drops in Intra-Class Distance, capturing subtle longitudinal progress missed by standardized exams.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Project 9: Enterprise AI -->
+    <section class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm space-y-6">
+      <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-4">
+        <div>
+          <span class="text-xs font-semibold uppercase tracking-wider text-purple-600">Enterprise AI Architecture</span>
+          <h2 class="text-2xl font-bold mt-1">Generative AI Analytics & Intelligence Platform</h2>
+        </div>
+        <div class="flex gap-2">
+          <span class="text-xs font-semibold px-3 py-1 bg-purple-50 text-purple-700 rounded-full border border-purple-200">Production Infrastructure</span>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6 text-sm">
+        <div>
+          <h3 class="font-bold text-slate-900">Operational Friction</h3>
+          <p class="text-slate-600 mt-1 leading-relaxed">
+            Manual data aggregation and ingestion absorbed over 60% of operational analyst bandwidth across transit asset maintenance workflows, causing reporting delays and planning bottlenecks.
+          </p>
+        </div>
+        <div>
+          <h3 class="font-bold text-slate-900">Platform Delivery</h3>
+          <p class="text-slate-600 mt-1 leading-relaxed">
+            Architected an agentic, serverless analytics platform combining AWS Bedrock, SageMaker, and Lambda, providing automated schema validation and report generation with strict accuracy guardrails.
+          </p>
+        </div>
+      </div>
+
+      <div class="space-y-3 text-sm bg-slate-50 p-5 rounded-xl border border-slate-100">
+        <h3 class="font-bold text-slate-900">Execution & Metrics</h3>
+        <ul class="list-disc list-inside space-y-2 text-slate-600">
+          <li>Authored technical PRDs defining data-quality contracts and API specs, reducing analysis turnaround times by 35%.</li>
+          <li>Built offline evaluation benchmarking pipelines to monitor concurrency throughput, latency variance, and response drift under high request volumes.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Project 10: Marketplace Pulse -->
+    <section class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm space-y-6">
+      <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-4">
+        <div>
+          <span class="text-xs font-semibold uppercase tracking-wider text-teal-600">Decision Intelligence Platform</span>
+          <h2 class="text-2xl font-bold mt-1">Marketplace Pulse: Dynamic Pricing & Seller Intelligence Engine</h2>
+        </div>
+        <div class="flex gap-2">
+          <span class="text-xs font-semibold px-3 py-1 bg-teal-50 text-teal-700 rounded-full border border-teal-200">Interactive ML Tool</span>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6 text-sm">
+        <div>
+          <h3 class="font-bold text-slate-900">Problem & Market Opportunity</h3>
+          <p class="text-slate-600 mt-1 leading-relaxed">
+            Independent marketplace merchants face inventory stagnation and margin compression due to opaque competitor pricing and unpredictable transit costs across multi-regional hubs.
+          </p>
+        </div>
+        <div>
+          <h3 class="font-bold text-slate-900">Product Solution</h3>
+          <p class="text-slate-600 mt-1 leading-relaxed">
+            Engineered an end-to-end analytics and pricing copilot processing 760,000+ listings to recommend competitive price bands, rank seller reliability, and optimize cross-country fulfillment paths.
+          </p>
+        </div>
+      </div>
+
+      <div class="space-y-3 text-sm bg-slate-50 p-5 rounded-xl border border-slate-100">
+        <h3 class="font-bold text-slate-900">PM Decisions & Architecture</h3>
+        <ul class="list-disc list-inside space-y-2 text-slate-600">
+          <li><strong>Model Benchmark & Margin Trade-offs:</strong> Evaluated 4 regression architectures (Ridge, Random Forest, Decision Tree, KNN); selected Random Forest for primary pricing guidance (RMSE: 54.22 vs Ridge: 171.73) to minimize underpricing risk.</li>
+          <li><strong>Reputation Scoring:</strong> Formulated a max-heap prioritization algorithm weighting seller ratings and review volume to balance trust metrics with platform liquidity.</li>
+          <li><strong>Fulfillment Path Optimization:</strong> Integrated graph-based shortest-path routing (Dijkstra) between regional transit nodes to model delivery cost impact on net margins.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Project 11: PulseStream Big Data NLP -->
+    <section class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm space-y-6">
+      <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-4">
+        <div>
+          <span class="text-xs font-semibold uppercase tracking-wider text-sky-600">Distributed Big Data & Streaming NLP</span>
+          <h2 class="text-2xl font-bold mt-1">PulseStream: Real-Time Social Sentiment & Analytics Engine</h2>
+        </div>
+        <div class="flex gap-2">
+          <span class="text-xs font-semibold px-3 py-1 bg-sky-50 text-sky-700 rounded-full border border-sky-200">Apache Spark & Live API</span>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6 text-sm">
+        <div>
+          <h3 class="font-bold text-slate-900">Problem & User Need</h3>
+          <p class="text-slate-600 mt-1 leading-relaxed">
+            Brands and analysts need real-time awareness of customer sentiment during live events and product launches, but high-velocity unstructured social streams cause severe reporting latency and memory bottlenecks.
+          </p>
+        </div>
+        <div>
+          <h3 class="font-bold text-slate-900">Distributed Solution</h3>
+          <p class="text-slate-600 mt-1 leading-relaxed">
+            Engineered an end-to-end distributed text analytics pipeline pairing the Twitter/X API with an 8-core Apache Spark cluster to clean, vectorize, and classify live tweet streams at scale.
+          </p>
+        </div>
+      </div>
+
+      <div class="space-y-3 text-sm bg-slate-50 p-5 rounded-xl border border-slate-100">
+        <h3 class="font-bold text-slate-900">Architecture & Technical PM Decisions</h3>
+        <ul class="list-disc list-inside space-y-2 text-slate-600">
+          <li><strong>Multi-Model Benchmarking:</strong> Trained and benchmarked three distinct classifiers—Logistic Regression, LinearSVC (SVM), and Multinomial Naive Bayes—evaluating accuracy, precision, and latency on a 320,000-sample test split.</li>
+          <li><strong>Zero-Shuffle Broadcast Serialization:</strong> Broadcasted serialized TF-IDF vectorizers and pre-trained classification models across Spark worker nodes, eliminating cross-partition network shuffling and preventing JVM driver memory spikes.</li>
+          <li><strong>Real-Time Aggregation & Telemetry:</strong> Implemented PySpark window partitions and UDFs to output live sentiment polarity distributions and trending n-gram frequency rankings for executive dashboards.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Project 12: BondAgent FinTech AI -->
+    <section class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm space-y-6">
+      <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-4">
+        <div>
+          <span class="text-xs font-semibold uppercase tracking-wider text-amber-600">Agentic AI & Quantitative FinTech</span>
+          <h2 class="text-2xl font-bold mt-1">BondAgent: Multi-Agent Fixed-Income Copilot & Yield Engine</h2>
+        </div>
+        <div class="flex gap-2">
+          <span class="text-xs font-semibold px-3 py-1 bg-amber-50 text-amber-700 rounded-full border border-amber-200">AWS Bedrock & Serverless</span>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6 text-sm">
+        <div>
+          <h3 class="font-bold text-slate-900">User Need & Domain Friction</h3>
+          <p class="text-slate-600 mt-1 leading-relaxed">
+            Fixed-income investors and analysts struggle to synthesize real-time Treasury yield curves, macroeconomic policy shifts, and bond duration risk across disjointed market terminals, leading to delayed portfolio rebalancing.
+          </p>
+        </div>
+        <div>
+          <h3 class="font-bold text-slate-900">Agentic Architecture</h3>
+          <p class="text-slate-600 mt-1 leading-relaxed">
+            Engineered a production-ready conversational copilot using AWS Bedrock Agents and Lambda tool-calling to orchestrate live bond pricing, yield spread benchmarking, and interest rate scenario forecasting.
+          </p>
+        </div>
+      </div>
+
+      <div class="space-y-3 text-sm bg-slate-50 p-5 rounded-xl border border-slate-100">
+        <h3 class="font-bold text-slate-900">Core Technical PM Decisions</h3>
+        <ul class="list-disc list-inside space-y-2 text-slate-600">
+          <li><strong>Deterministic Tool Execution:</strong> Decoupled the Bedrock Agent into three dedicated Lambda action groups (Yield Extraction, Duration/Spread Analysis, and Macro Prediction), offloading complex financial calculations to deterministic code to prevent LLM mathematical hallucinations.</li>
+          <li><strong>Privacy-Preserving Authentication:</strong> Integrated Amazon Cognito with client-side SHA-256 session hashing, guaranteeing secure JWT validation and persistent DynamoDB conversation threads without storing raw user identity in session metadata.</li>
+          <li><strong>Resilient Ingestion Pipeline:</strong> Configured S3 telemetry caching for Alpha Vantage financial feeds with automated schema normalizers, eliminating third-party API rate-limit bottlenecks during peak market hours.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Project 13: Stock Exchange Full-Stack Platform -->
+    <section class="bg-white p-8 rounded-2xl border border-slate-200 shadow-sm space-y-6">
+      <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-4">
+        <div>
+          <span class="text-xs font-semibold uppercase tracking-wider text-indigo-600">Full-Stack Real-Time Systems</span>
+          <h2 class="text-2xl font-bold mt-1">Equinox: Real-Time Stock Exchange & Analytics Platform</h2>
+        </div>
+        <div class="flex gap-2">
+          <span class="text-xs font-semibold px-3 py-1 bg-indigo-50 text-indigo-700 rounded-full border border-indigo-200">FastAPI, WebSockets & Redis</span>
+        </div>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-6 text-sm">
+        <div>
+          <h3 class="font-bold text-slate-900">User Need & System Friction</h3>
+          <p class="text-slate-600 mt-1 leading-relaxed">
+            Traders and retail investors require sub-second price updates and technical indicators without page reloads, demanding an event-driven architecture capable of handling high-frequency websocket broadcasting.
+          </p>
+        </div>
+        <div>
+          <h3 class="font-bold text-slate-900">Full-Stack Solution</h3>
+          <p class="text-slate-600 mt-1 leading-relaxed">
+            Built an end-to-end trading and analytics platform featuring a FastAPI asynchronous backend, Redis pub/sub broker for real-time WebSocket ticker feeds, PostgreSQL/SQLite persistence, and automated moving average & RSI analytics.
+          </p>
+        </div>
+      </div>
+
+      <div class="space-y-3 text-sm bg-slate-50 p-5 rounded-xl border border-slate-100">
+        <h3 class="font-bold text-slate-900">Engineering & Technical PM Decisions</h3>
+        <ul class="list-disc list-inside space-y-2 text-slate-600">
+          <li><strong>Event-Driven Pub/Sub Architecture:</strong> Leveraged Redis channels to decouple stock price generators from client WebSocket connections, ensuring low-latency data streaming to multiple concurrent dashboard viewers.</li>
+          <li><strong>Relational & Time-Series Modeling:</strong> Designed PostgreSQL database schemas (SQLAlchemy ORM) optimized for storing historical tick data and technical indicator snapshots.</li>
+          <li><strong>Resilient Fallback & Containerization:</strong> Implemented automatic mock-data fallbacks during third-party API rate limits and packaged the full stack with Docker/Podman compose for instant containerized deployment.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Professional Experience -->
+    <section class="space-y-4">
+      <h2 class="text-xl font-bold tracking-tight">Professional & Analytics Experience</h2>
+      <div class="grid sm:grid-cols-2 gap-4 text-sm">
+        <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-sm space-y-2">
+          <span class="text-xs font-semibold px-2.5 py-1 bg-cyan-50 text-cyan-700 rounded-full border border-cyan-200">Data Analytics</span>
+          <p class="font-semibold text-slate-900 mt-2">Data Analyst (2 Years Experience)</p>
+          <p class="text-slate-500 text-xs">Core Responsibilities: Data Collection, Error Correction & Visualization</p>
+          <p class="text-slate-600 text-xs leading-relaxed">Executed rigorous data cleaning, anomaly detection, data collection pipelines, and interactive visualization dashboards to support decision-making.</p>
+        </div>
+        <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-sm space-y-2">
+          <span class="text-xs font-semibold px-2.5 py-1 bg-green-50 text-green-700 rounded-full border border-green-200">Transit Analytics</span>
+          <p class="font-semibold text-slate-900 mt-2">Enterprise Asset Management Analyst Intern</p>
+          <p class="text-slate-500 text-xs">Metropolitan Transportation Authority (MTA) • New York</p>
+          <p class="text-slate-600 text-xs leading-relaxed">Driving data-driven operational workflows, schema validation, and transit asset maintenance analytics.</p>
         </div>
       </div>
     </section>
 
-    <!-- Google I/O & Credentials Section -->
-    <section id="credentials" class="space-y-8">
-      <div class="border-b border-slate-800 pb-6">
-        <p class="text-xs font-semibold uppercase tracking-widest text-green-400 mb-1">Ecosystem Engagement</p>
-        <h2 class="text-3xl font-extrabold text-white">Google I/O & Technical Credentials</h2>
-      </div>
-
-      <div class="grid md:grid-cols-2 gap-6">
-        <div class="glass-card rounded-3xl p-8 space-y-4 border-l-4 border-l-google-blue">
-          <span class="px-3 py-1 bg-google-blue/10 border border-google-blue/20 text-blue-300 text-xs font-bold rounded-full">Google Ecosystem</span>
-          <h3 class="text-xl font-bold text-white">Google I/O Live Attendee & Cloud Scholar</h3>
-          <p class="text-xs text-slate-400">Shoreline Amphitheatre, Mountain View, CA & AI Cloud Leader Track (2026)</p>
-          <p class="text-slate-300 text-sm leading-relaxed">
-            Attended Google I/O live keynote and developer sessions at the Shoreline Amphitheatre in Mountain View, complemented by specialized Google Cloud AI infrastructure and multi-agent systems certification.
-          </p>
+    <!-- Achievements & Honors (MeritPages) -->
+    <section class="space-y-4">
+      <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-4">
+        <div>
+          <span class="text-xs font-semibold uppercase tracking-wider text-amber-600">Recognitions & Honors</span>
+          <h2 class="text-2xl font-bold mt-1">Achievements & MeritPages Honors</h2>
         </div>
+        <div>
+          <a href="https://meritpages.com/neethu829" target="_blank" class="px-4 py-2 bg-amber-50 text-amber-700 border border-amber-200 rounded-lg text-xs font-semibold hover:bg-amber-100 transition">View MeritPages Profile</a>
+        </div>
+      </div>
+      <div class="grid sm:grid-cols-3 gap-4 text-sm">
+        <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-sm space-y-2">
+          <span class="text-xs font-semibold px-2.5 py-1 bg-rose-50 text-rose-700 rounded-full border border-rose-200">Civic Engagement</span>
+          <p class="font-semibold text-slate-900 mt-2">Civic Engagement Award</p>
+          <p class="text-slate-500 text-xs">Student Engagement and Development Awards, NYIT (2026)</p>
+          <p class="text-slate-600 text-xs leading-relaxed">Recognized for outstanding campus leadership, public policy engagement, and community impact.</p>
+        </div>
+        <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-sm space-y-2">
+          <span class="text-xs font-semibold px-2.5 py-1 bg-blue-50 text-blue-700 rounded-full border border-blue-200">Datathon Victory</span>
+          <p class="font-semibold text-slate-900 mt-2">Best Data Policy Brief</p>
+          <p class="text-slate-500 text-xs">Whole Health Community Datathon & NYC Pop-Up at The Oculus (2026)</p>
+          <p class="text-slate-600 text-xs leading-relaxed">Awarded top honors for rigorous data policy analysis and participatory budgeting insights.</p>
+        </div>
+        <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-sm space-y-2">
+          <span class="text-xs font-semibold px-3 py-1 bg-purple-50 text-purple-700 rounded-full border border-purple-200">Leadership</span>
+          <p class="font-semibold text-slate-900 mt-2">Vice President, CES Executive Board</p>
+          <p class="text-slate-500 text-xs">NYIT Center for Entrepreneurial Studies (2025–2026)</p>
+          <p class="text-slate-600 text-xs leading-relaxed">Led student founder outreach, pitch competitions, and cross-functional entrepreneurial programs.</p>
+        </div>
+      </div>
+    </section>
 
-        <div class="glass-card rounded-3xl p-8 space-y-4 border-l-4 border-l-google-green">
-          <span class="px-3 py-1 bg-google-green/10 border border-google-green/20 text-green-300 text-xs font-bold rounded-full">Operational Leadership</span>
-          <h3 class="text-xl font-bold text-white">Enterprise Asset Management Analyst Intern</h3>
-          <p class="text-xs text-slate-400">Metropolitan Transportation Authority (MTA) • New York</p>
-          <p class="text-slate-300 text-sm leading-relaxed">
-            Driving data-driven operational workflows, schema validation, and transit asset maintenance analytics across New York City’s critical infrastructure.
-          </p>
+    <!-- Leadership & Credentials -->
+    <section class="space-y-4">
+      <h2 class="text-xl font-bold tracking-tight">Leadership & Technical Credentials</h2>
+      <div class="grid sm:grid-cols-2 gap-4 text-sm">
+        <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-sm">
+          <p class="font-semibold text-slate-900">Google Cloud Career Launchpad Scholar & Google I/O Attendee</p>
+          <p class="text-slate-500 text-xs mt-0.5">AI Cloud Leader Track (2026)</p>
+          <p class="text-slate-600 mt-2 leading-relaxed">Completed specialized technical curriculum focusing on scalable cloud platforms, multi-agent workflows, and AI infrastructure, alongside live Google I/O Shoreline Amphitheatre attendance in Mountain View, CA.</p>
+        </div>
+        <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-sm">
+          <p class="font-semibold text-slate-900">Enterprise Asset Management Analyst Intern</p>
+          <p class="text-slate-500 text-xs mt-0.5">Metropolitan Transportation Authority (MTA)</p>
+          <p class="text-slate-600 mt-2 leading-relaxed">Driving data-driven operational workflows, schema validation, and transit asset maintenance analytics.</p>
         </div>
       </div>
     </section>
 
   </main>
-
-  <!-- Footer -->
-  <footer class="border-t border-slate-800 py-12 text-center text-slate-500 text-xs space-y-2">
-    <p>© 2026 Neethu Thalappan Koroth. Built for APM & AI Leadership Roles.</p>
-    <p>
-      <a href="[https://www.linkedin.com/in/nithu-nair](https://www.linkedin.com/in/nithu-nair)" target="_blank" class="text-blue-400 hover:underline">LinkedIn Profile</a> • 
-      <a href="[https://github.com/neethunairkoroth](https://github.com/neethunairkoroth)" target="_blank" class="text-blue-400 hover:underline">GitHub</a> • 
-      <a href="[https://meritpages.com/neethu829](https://meritpages.com/neethu829)" target="_blank" class="text-blue-400 hover:underline">MeritPages</a>
-    </p>
-  </footer>
-
 </body>
 </html>
